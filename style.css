@@ -389,10 +389,12 @@ h4{
    }
 }
 @media screen and (min-width: 375px) and (max-width:767px){
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@400;500&family=Quicksand&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@300&family=Poppins:wght@400;500&family=Quicksand&display=swap');
     body{
-        font-family: 'Quicksand';
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
         width: 100%;
     }
     .logo{
