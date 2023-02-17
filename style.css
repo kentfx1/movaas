@@ -3,15 +3,17 @@
     margin: 0;
 }
 body{
-    font-family: 'Quicksand';
+    font-family: Arial, Helvetica, sans-serif ;
     background-repeat: no-repeat;
     background-size: contain;
     color: white;
     height: 100vh;
-    font-size: clamp(.5rem, 3.5vw, 1rem);
 }
 .top-container{
     background: linear-gradient(rgb(216, 216, 255),rgb(100, 88, 185));
+}
+.content p{
+    color: white;
 }
 .logo{
     width: 20%;
@@ -23,9 +25,6 @@ body{
     float: right;
     padding-top: 5%;
     padding-right: 10%;
-    font-family: 'Quicksand';
-    
-    
 }
 .navcontent a{
     text-decoration: none;
@@ -40,17 +39,22 @@ body{
     color: rgb(83, 106, 255);
 }
 .content{
-    font-family: 'poppins';
     display: flex;
     flex: row;
+    position: relative;
+    top: 20px;
+    font-size: 20px;
 }
-h1{
-    font-size: 45px;
-    font-family: 'poppins';
+.side-image{
+    width: 500px;
+    position: relative;
+    bottom: 20px;
+}
+.content h1{
+    font-size: 40px;
     padding-left: 5%;
-    line-height: 45px;
 }
-h3{
+.content h2, h3, p{
     padding-left: 5%;
 }
 .sign{
@@ -101,8 +105,6 @@ button:hover{
     width: 50%;
 }
 .mid-content{
-    /* display: grid;
-    grid-template-columns: repeat(6, 1fr); */
     display: flex; 
     flex-direction: row;
     width: 100%;
@@ -195,10 +197,6 @@ li{
 }
 .about h4, h2, p{
     color: black;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding-right: 10px; */
 }
 .about{
     padding-top: 2%;
@@ -248,7 +246,6 @@ li{
 }
 footer{
     background: rgb(8, 8, 46);
-    /* width: 100%; */
     padding-top: 40px;
 }
 .testimonial > h3{
@@ -389,135 +386,137 @@ h4{
    }
 }
 @media screen and (min-width: 375px) and (max-width:767px){
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@300&family=Poppins:wght@400;500&family=Quicksand&display=swap');
     *{
         padding: 0;
         margin: 0;
     }
     body{
-        font-family: 'Montserrat', sans-serif;
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Poppins', sans-serif;
-        font-family: 'Quicksand', sans-serif;
+        font-family: Arial, Helvetica, sans-serif ;
         width: 100%;
     }
     .logo{
         position: relative;
         top: 0.2px;
         width: 100px;
-       }
-       .navcontent{
+    }
+    .navcontent{
         display: none;
-       }
-       .content{
+    }
+    .content{
         display: flex;
         flex-direction: column-reverse;
-        font-family: 'Montserrat', sans-serif;
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Poppins', sans-serif;
-        font-family: 'Quicksand', sans-serif;
+        font-family: Arial, Helvetica, sans-serif ;
         text-align: center;
+        padding-bottom: 30px;
         
-       }
-       .content h1{
-        font-size: 25px;
-        
+    }
+    .content h1{
+        font-size: 20px;
         color: rgb(255, 255, 255);
-       }
-       .content h3{
+    }
+    .content p{
+        font-size: 15px;
+    }
+    .content h3{
         font-size: 15px;
         color: rgb(231, 231, 231);
-       }
-       .content button{
+    }
+    .content button{
         width: 100px;
         font-size: 10px;
-       }
-       .side-image{
+    }
+    .side-image{
         width: 350px;
-       }
-       .mid-content{
+    }
+    .mid-content{
         font-size: 10px;
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-       }
-       .package-container{
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 20px;
+    }
+    .package-container{
         display: flex;
         flex-direction: column;
         text-align: center;
-       }
-       .about-img{
+    }
+    .about-img{
         position: relative;
-        bottom: 205px;
-       }
-       .about-content{
+        bottom: 200px;
+    }
+    .about-content{
         position: relative;
-        top: 300px;
-       }
-       .about{
+        top: 350px;
+        font-size: 200px;
+        height: 200px;
+    }
+    .about{
         display: flex;
         flex-direction: column;
-       }
-       .box button{
+    }
+    .box button{
         width: 50px;
         font-size: 7px;
         height: 15px;
-       }
-       .about-content{
+    }
+    .about-content{
         font-size: 10px;
-       }
-       .services{
+    }
+    .services{
         font-size: 10px;
-       }
-       .about-content button{
-        width: 100px;
-        font-size: 14px;
-       }
-       .clients{
+        height: 200px;
+    }
+    .about-content button{
+        width: 50px;
+        height: 10px;
+        font-size: 7px;
+    }
+    .clients{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-left: 5%;
-       }
-       .services button{
-        width: 100px;
-        font-size: 14px;
-       }
-       .img-footer{
+    }
+    .services button{
+        width: 50px;
+        height: 10px;
+        font-size: 7px;
+    }
+    .img-footer{
         width: 100px;
         margin-top: 40px;
-       }
-       .anchor-footer a{
+    }
+    .anchor-footer a{
         font-size: 10px;
-       }
-       .anchor-footer input{
+    }
+    .anchor-footer input{
         font-size: 5px;
         width: 80px;
         height: 10px;
-       }
-       .footer-services{
+    }
+    .footer-services{
         font-size: 7px;
         position: relative;
         right: 80px;
-       }
-       .footer-services h2{
+    }
+    .footer-services h2{
         font-size: 15px;
-       }
-       .footer-services img{
+    }
+    .footer-services img{
         width: 40px;
-       }
-       .foot-service h2{
+    }
+    .foot-service h2{
         font-size: 15px;
-       }
-       .foot-service{
+    }
+    .foot-service{
         position: relative;
         top: 160px;
         right: 600px;
-       }
-       footer{
+    }
+    footer{
         display: grid;
         place-items: center;
-       }
-       .footer-content{
+    }
+    .footer-content{
         padding: 0;
-       }
+    }
 }
