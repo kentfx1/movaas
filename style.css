@@ -319,7 +319,7 @@ h4{
         font-size: 12px;
     }
 }
-@media screen and (min-width: 800px){
+@media screen and (min-width: 800px) and ( max-width:900px){
    .logo{
     position: relative;
     top: 20%;
@@ -388,9 +388,13 @@ h4{
     place-items: center;
    }
 }
-@media screen and (min-width: 375px){
+@media screen and (min-width: 375px) and (max-width:767px){
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@400;500&family=Quicksand&display=swap');
+
     body{
-        font-family: 'Quicksand';
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
     }
     .logo{
         position: relative;
