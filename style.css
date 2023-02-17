@@ -390,6 +390,10 @@ h4{
 }
 @media screen and (min-width: 375px) and (max-width:767px){
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@300&family=Poppins:wght@400;500&family=Quicksand&display=swap');
+    *{
+        padding: 0;
+        margin: 0;
+    }
     body{
         font-family: 'Montserrat', sans-serif;
         font-family: 'Open Sans', sans-serif;
@@ -412,28 +416,30 @@ h4{
         font-family: 'Open Sans', sans-serif;
         font-family: 'Poppins', sans-serif;
         font-family: 'Quicksand', sans-serif;
+        text-align: center;
         
        }
        .content h1{
-        font-size: 20px;
-        line-height: 18px;
+        font-size: 25px;
+        
         color: rgb(255, 255, 255);
        }
        .content h3{
-        font-size: 10px;
+        font-size: 15px;
         color: rgb(231, 231, 231);
        }
        .content button{
         width: 100px;
         font-size: 10px;
-        position: relative;
-        left: 130px;
        }
        .side-image{
         width: 350px;
        }
        .mid-content{
         font-size: 10px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
        }
        .package-container{
         display: flex;
