@@ -412,28 +412,33 @@ h4{
         font-family: 'Open Sans', sans-serif;
         font-family: 'Poppins', sans-serif;
         font-family: 'Quicksand', sans-serif;
+        
        }
        .content h1{
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 18px;
+        color: rgb(255, 255, 255);
        }
        .content h3{
         font-size: 10px;
-    
+        color: rgb(231, 231, 231);
        }
        .content button{
         width: 100px;
         font-size: 10px;
+        position: relative;
+        left: 130px;
        }
        .side-image{
-        width: 400px;
+        width: 350px;
        }
        .mid-content{
-        font-size: 5px;
+        font-size: 10px;
        }
        .package-container{
         display: flex;
         flex-direction: column;
+        text-align: center;
        }
        .about-img{
         position: relative;
@@ -448,8 +453,9 @@ h4{
         flex-direction: column;
        }
        .box button{
-        width: 100px;
-        font-size: 14px;
+        width: 50px;
+        font-size: 7px;
+        height: 15px;
        }
        .about-content{
         font-size: 10px;
@@ -461,21 +467,31 @@ h4{
         width: 100px;
         font-size: 14px;
        }
+       .clients{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 5%;
+       }
        .services button{
         width: 100px;
         font-size: 14px;
        }
        .img-footer{
         width: 100px;
-       margin-top: 40px;
+        margin-top: 40px;
        }
        .anchor-footer a{
         font-size: 10px;
        }
        .anchor-footer input{
         font-size: 5px;
-        width: 100px;
-        height: 20px;
+        width: 80px;
+        height: 10px;
+       }
+       .footer-services{
+        font-size: 7px;
+        position: relative;
+        right: 80px;
        }
        .footer-services h2{
         font-size: 15px;
@@ -488,10 +504,14 @@ h4{
        }
        .foot-service{
         position: relative;
-        right: 150px;
+        top: 160px;
+        right: 600px;
        }
        footer{
         display: grid;
         place-items: center;
+       }
+       .footer-content{
+        padding: 0;
        }
 }
