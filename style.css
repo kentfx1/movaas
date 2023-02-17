@@ -389,6 +389,9 @@ h4{
    }
 }
 @media screen and (min-width: 375px){
+    body{
+        font-family: 'Quicksand';
+    }
     .logo{
         position: relative;
         top: 0.2px;
