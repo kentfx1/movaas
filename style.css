@@ -408,8 +408,7 @@ h4{
         width: 100%;
     }
     .logo{
-        position: relative;
-        top: 0.2px;
+        padding-top: 30px;
         width: 120px;
     }
     .navcontent{
@@ -420,7 +419,7 @@ h4{
         flex-direction: column-reverse;
         font-family: Arial, Helvetica, sans-serif ;
         text-align: center;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
         
     }
     .content h1{
@@ -447,6 +446,15 @@ h4{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding-bottom: 20px;
+        text-align: center;
+        position: relative;
+        bottom: 60px;
+    }
+    .h2{
+        font-size: 15px;
+        text-align: center;
+        position: relative;
+        bottom: 10px;
     }
     .package-container{
         display: flex;
