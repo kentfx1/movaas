@@ -11,10 +11,25 @@ body{
 }
 .top-container{
     background: linear-gradient(rgb(216, 216, 255),rgb(100, 88, 185));
+    padding-top: 200px;
+}
+nav{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+   
+}
+.scrolled{
+    height: 100px;
+    background: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
 }
 .content p{
     color: white;
-}
+} 
 .logo{
     width: 20%;
     position: relative;
@@ -23,22 +38,22 @@ body{
 }
 .navcontent{
     float: right;
-    padding-top: 5%;
-    padding-right: 10%;
+    padding-top: 50px;
+    /* padding-right: 10%; */
 }
 .navcontent a{
     font-size: 20px;
     text-decoration: none;
-    /* color: white; */
     padding: 20px;
 }
 .navcontent a:nth-child(-n + 4){
     color: rgb(0, 0, 90);
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .navcontent a:nth-child(-n + 4):hover{
     color: rgb(83, 106, 255);
+    border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
 }
 .content{
     display: flex;
@@ -263,6 +278,8 @@ li{
 footer{
     background: rgb(8, 8, 46);
     padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
 }
 .testimonial > h3{
     color: black;
@@ -300,10 +317,6 @@ h4{
 .footer-services > h4, h2,.loci{
     color: white;
     
-}
-.footer-content{
-    display: grid;
-    grid-template-columns: repeat(4, 2fr);
 }
 .footer-services{
     margin: 20%;
@@ -540,10 +553,6 @@ h4{
         position: relative;
         top: 160px;
         right: 600px;
-    }
-    footer{
-        display: grid;
-        place-items: center;
     }
     .footer-content{
         padding: 0;
