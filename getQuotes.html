@@ -9,6 +9,7 @@
     <title>Movaas/Get Quotes</title>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="getQuotes.css">
 </head>
 <body>
     <div class="container">
@@ -23,15 +24,138 @@
                     <a href="#" class="sign">Sign Up</a>
                 </div> 
             </nav>
-            <div>
+            <div class="form">
                 <form action="#">
+                    <h2>YOUR DETAILS</h2><br><br>
                     <label for="fname">FULL NAME</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your Full Name..">
+                    <input type="text" id="fname"  class="fullname" name="firstname" placeholder="Your Full Name.."><br><br><br><br>
                     <label for="fname">PHONE NUMBER</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your Phone Number..">
-                    <label for="fname">EMAIL</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your Email..">
-                </form>
+                    <input type="text" id="pnumber" class="pnumber" name="pnumber" placeholder="Your Phone Number..">
+                    <label for="email" class="lemail">EMAIL</label>
+                    <input type="text" id="email" class="email" name="email" placeholder="Your Email..">
+                </form><br>
+                <form action="#">
+                    <h2>YOUR MOVE</h2><br><br>
+                    <label for="cars">FROM:</label>
+                    <input type="text" id="fname" name="city" class="city" placeholder="CITY">
+                    <select name="places" id="place" class="s-state">
+                        <option disabled selected>--Select State--</option>
+                            <option value="Abia">Abia</option>
+                            <option value="Adamawa">Adamawa</option>
+                            <option value="Akwa Ibom">Akwa Ibom</option>
+                            <option value="Anambra">Anambra</option>
+                            <option value="Bauchi">Bauchi</option>
+                            <option value="Bayelsa">Bayelsa</option>
+                            <option value="Benue">Benue</option>
+                            <option value="Borno">Borno</option>
+                            <option value="Cross River">Cross River</option>
+                            <option value="Delta">Delta</option>
+                            <option value="Ebonyi">Ebonyi</option>
+                            <option value="Edo">Edo</option>
+                            <option value="Ekiti">Ekiti</option>
+                            <option value="Enugu">Enugu</option>
+                            <option value="FCT">Federal Capital Territory</option>
+                            <option value="Gombe">Gombe</option>
+                            <option value="Imo">Imo</option>
+                            <option value="Jigawa">Jigawa</option>
+                            <option value="Kaduna">Kaduna</option>
+                            <option value="Kano">Kano</option>
+                            <option value="Katsina">Katsina</option>
+                            <option value="Kebbi">Kebbi</option>
+                            <option value="Kogi">Kogi</option>
+                            <option value="Kwara">Kwara</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Nasarawa">Nasarawa</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Ogun">Ogun</option>
+                            <option value="Ondo">Ondo</option>
+                            <option value="Osun">Osun</option>
+                            <option value="Oyo">Oyo</option>
+                            <option value="Plateau">Plateau</option>
+                            <option value="Rivers">Rivers</option>
+                            <option value="Sokoto">Sokoto</option>
+                            <option value="Taraba">Taraba</option>
+                            <option value="Yobe">Yobe</option>
+                            <option value="Zamfara">Zamfara</option>
+                        </select><br><br>
+
+                        <label for="to">TO:</label>
+                    <input type="text" id="city2" name="city2" class="city2" placeholder="CITY">
+                    <select name="places" id="place" class="s-state2">
+                        <option disabled selected>--Select State--</option>
+                            <option value="Abia">Abia</option>
+                            <option value="Adamawa">Adamawa</option>
+                            <option value="Akwa Ibom">Akwa Ibom</option>
+                            <option value="Anambra">Anambra</option>
+                            <option value="Bauchi">Bauchi</option>
+                            <option value="Bayelsa">Bayelsa</option>
+                            <option value="Benue">Benue</option>
+                            <option value="Borno">Borno</option>
+                            <option value="Cross River">Cross River</option>
+                            <option value="Delta">Delta</option>
+                            <option value="Ebonyi">Ebonyi</option>
+                            <option value="Edo">Edo</option>
+                            <option value="Ekiti">Ekiti</option>
+                            <option value="Enugu">Enugu</option>
+                            <option value="FCT">Federal Capital Territory</option>
+                            <option value="Gombe">Gombe</option>
+                            <option value="Imo">Imo</option>
+                            <option value="Jigawa">Jigawa</option>
+                            <option value="Kaduna">Kaduna</option>
+                            <option value="Kano">Kano</option>
+                            <option value="Katsina">Katsina</option>
+                            <option value="Kebbi">Kebbi</option>
+                            <option value="Kogi">Kogi</option>
+                            <option value="Kwara">Kwara</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Nasarawa">Nasarawa</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Ogun">Ogun</option>
+                            <option value="Ondo">Ondo</option>
+                            <option value="Osun">Osun</option>
+                            <option value="Oyo">Oyo</option>
+                            <option value="Plateau">Plateau</option>
+                            <option value="Rivers">Rivers</option>
+                            <option value="Sokoto">Sokoto</option>
+                            <option value="Taraba">Taraba</option>
+                            <option value="Yobe">Yobe</option>
+                            <option value="Zamfara">Zamfara</option>
+                        </select><br><br><br>
+                        <label for="aparte"> TYPE OF AN APARTMENT</label>
+                        <select class="t-aparte">
+                            <option disabled selected>--Former Apartment--</option>
+                            <option value="Self">SELF-CONTAIN</option>
+                            <option value="Semi">SEMI-DETACHED</option>
+                            <option value="Bungalow">BUNGALOW</option>
+                            <option value="Duplex">DUPLEX</option>
+                            <option value="Flat">FLAT</option>
+                            <option value="Office">OFFICE SPACE</option>
+                            <option value="Shop">SHOP</option>
+                            <option value="Show">SHOW ROOM</option>
+                            <option value="Studio">STUDIO APARTMENT</option>
+                            <option value="Terrace">TERRACE</option>
+                            <option value="Ware">WARE HOUSE</option>
+                            <option value="Hall">HALL</option>
+                        </select>
+                        <select class="t-aparte">
+                            <option disabled selected>--New Apartment--</option>
+                            <option value="Self">SELF-CONTAIN</option>
+                            <option value="Semi">SEMI-DETACHED</option>
+                            <option value="Bungalow">BUNGALOW</option>
+                            <option value="Duplex">DUPLEX</option>
+                            <option value="Flat">FLAT</option>
+                            <option value="Office">OFFICE SPACE</option>
+                            <option value="Shop">SHOP</option>
+                            <option value="Show">SHOW ROOM</option>
+                            <option value="Studio">STUDIO APARTMENT</option>
+                            <option value="Terrace">TERRACE</option>
+                            <option value="Ware">WARE HOUSE</option>
+                            <option value="Hall">HALL</option>
+                        </select>
+                    <br><br>
+                    <button>NEXT</button>
+                  </form>
+                  <br><br>
             </div>
            
         </div>
